@@ -38,7 +38,7 @@ class ProyekController extends Controller
             'price'  => 'required',
         ]);
 
-        if($validator->fails){
+        if($validator->fails()){
             return response([
                 'errors' => $validator
             ]);
